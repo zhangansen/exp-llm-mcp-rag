@@ -1,0 +1,26 @@
+[project]
+name = "exp-llm-mcp-rag"
+version = "0.1.0"
+description = "learn and practice LLM-MCP-RAG"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp>=1.6.0",
+    "openai>=1.71.0",
+    "pydantic>=2.11.2",
+    "python-dotenv>=1.1.0",
+    "rich>=14.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipython>=9.1.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/augmented"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
