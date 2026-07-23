@@ -20,11 +20,11 @@ class ALogger:
             lits.append(text)
         rprint(Rule(title=" ".join(lits),style=rule_style))
     
-    def log_title(text: str | Text, rule_style="bright_black"):
-        objs = []
-        if text:
-            objs.append(Rule(title=text, style=rule_style))
-        rprint(*objs)
+def log_title(text: str | Text, rule_style="bright_black"):
+    objs = []
+    if text:
+        objs.append(Rule(title=text, style=rule_style))
+    rprint(*objs)
 
 
 if __name__ == "__main__":

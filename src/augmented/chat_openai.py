@@ -137,7 +137,7 @@ class AsyncChatOpenAI:
             )
             for t in self.tools
         ]
-    
+    #外部工具调用信息添加
     def append_tool_result(self,tool_call_id:str,tool_output:str)->None:
         self.messages.append(
             {
